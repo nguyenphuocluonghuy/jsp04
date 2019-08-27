@@ -23,13 +23,13 @@ public class NhanVien extends CanBo {
 			System.out.println("Nhập số điện thoại: ");
 			String soDienThoai = scanner.nextLine();
 			thongTin = tenNhanVien + "\t" + soDienThoai;
-			arrNhanVien.add(thongTin);//add thông tin nhân viên vào thongtin
+			arrNhanVien.add(thongTin);// add thông tin nhân viên vào thongtin
 		}
 	}
 
 	public String timNhanVienTheoTen(String tenNV) {
-		String[] thongTinNV = thongTin.split("\t");//tách chuỗi dựa trên khoảng trắng
-		if (thongTinNV[0].equals(tenNV)) {//so sánh 2 chuỗi 
+		String[] thongTinNV = thongTin.split("\t");// tách chuỗi dựa trên khoảng trắng
+		if (thongTinNV[0].equals(tenNV)) {// so sánh 2 chuỗi
 			ketQua = "Có nhân viên tên " + tenNV;
 		} else {
 			ketQua = "Không có nhân viên tên " + tenNV;
